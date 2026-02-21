@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umang  Yadav</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="contactme.css">
+
+</head>
+<body>
+  <!-- NAVBAR (user snippet integrated) -->
+  <div class="nav-fixed-wrapper">
+    <nav class="nav-card">
+      <div class="nav-inner">
+        <a class="brand" href="#">
+          <span class="logo">U</span>
+          <span>Umang</span>
+        </a>
+        <div class="nav-links">
+          <a href="index.html">Services</a>
+          <a href="work.html">Work</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="contactme.html">Contact</a>
+          <a class="cta-btn" href="https://wa.me/918941876178?text=Hi%20Umang%2C%20Let's%20Talk" target="_blank">Let's Talk</a>
+        </div>
+        <button class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#services">Services</a>
+        <a href="work.html">Work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="contactme.html">Contact</a>
+        <a class="cta-btn" href="https://wa.me/918941876178?text=Hi%20Umang%2C%20Let's%20Talk" target="_blank">Let's Talk</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+    <!-- STICKY HERO (starts right away, no blank space at top) -->
+
+    <!-- section 2 -->
+<!-- ============ CONTACT: SECTION 1 (Info cards) ============ -->
+<section class="contactme-section contactme-section--info" aria-labelledby="cm-info-title">
+  <div class="cm-container">
+    <header class="cm-head">
+      <p class="cm-eyebrow">Reach us</p>
+      <h2 id="cm-info-title" class="cm-title">Contact information</h2>
+      <p class="cm-sub">We’re quick on calls, WhatsApp and email — Mon–Sat, 9:30am–6:30pm IST.</p>
+    </header>
+
+    <div class="cm-grid cm-grid--3">
+      <!-- Address -->
+      <article class="cm-card">
+        <div class="cm-ico cm-ico--pin" aria-hidden="true"></div>
+        <h3 class="cm-card-title">Office address</h3>
+        <p class="cm-txt">
+          221B, Park Street, Business District,<br>
+          New Delhi, 110001, India
+        </p>
+        <a class="cm-link" href="https://maps.google.com" target="_blank" rel="noopener">Open in Google Maps →</a>
+      </article>
+
+      <!-- Call / WhatsApp -->
+      <article class="cm-card">
+        <div class="cm-ico cm-ico--phone" aria-hidden="true"></div>
+        <h3 class="cm-card-title">Call / WhatsApp</h3>
+        <ul class="cm-list">
+          <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+          <li><a href="tel:+911123456789">+91 11 2345 6789</a></li>
+          <li><a href="https://wa.me/919876543210" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        </ul>
+        <p class="cm-hint">Mon–Sat, 9:30am–6:30pm</p>
+      </article>
+
+      <!-- Email -->
+      <article class="cm-card">
+        <div class="cm-ico cm-ico--mail" aria-hidden="true"></div>
+        <h3 class="cm-card-title">Email</h3>
+        <ul class="cm-list">
+          <li><a href="mailto:sales@yourbrand.com">sales@yourbrand.com</a></li>
+          <li><a href="mailto:support@yourbrand.com">support@yourbrand.com</a></li>
+          <li><a href="mailto:partnerships@yourbrand.com">partnerships@yourbrand.com</a></li>
+        </ul>
+        <p class="cm-hint">Avg. response &lt; 24h</p>
+      </article>
+    </div>
+
+    <div class="cm-strip">
+      <div class="cm-hours"><span class="cm-dot"></span> Business hours: Mon–Sat, 9:30am–6:30pm IST</div>
+      <div class="cm-social" aria-label="Social">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="X">X</a>
+        <a href="#" aria-label="LinkedIn">IN</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT: SECTION 2 (Form + Help) ============ -->
+
+
+<!-- ============ CONTACT: SECTION 3 (Map) ============ -->
+<section class="contactme-section contactme-section--map" aria-labelledby="cm-map-title">
+  <div class="cm-container">
+    <header class="cm-head">
+      <p class="cm-eyebrow">Find us</p>
+      <h2 id="cm-map-title" class="cm-title">OpenStreetMap</h2>
+      <!-- <p class="cm-sub">No API key needed — pick a view or change the layer.</p> -->
+    </header>
+
+    <div class="cm-controls" role="toolbar" aria-label="Map controls">
+      <div class="cm-group">
+        <label for="cm3-views">Location:</label>
+        <select id="cm3-views" class="cm-select-native" aria-label="Choose location">
+          <option value="hq" selected>HQ — New Delhi</option>
+          <option value="branch">Branch — Hapur</option>
+          <option value="intl">Intl Rep — Ghaziabad</option>
+        </select>
+      </div>
+
+      <div class="cm-group">
+        <span>Layer:</span>
+        <button type="button" class="cm-chip is-active" data-layer="mapnik">Standard</button>
+        <button type="button" class="cm-chip" data-layer="cyclemap">Cycling</button>
+        <button type="button" class="cm-chip" data-layer="transportmap">Transport</button>
+        <button type="button" class="cm-chip" data-layer="hot">Humanitarian</button>
+      </div>
+
+      <a id="cm3-osm-link" class="cm-link" href="#" target="_blank" rel="noopener">Open full map ↗</a>
+    </div>
+
+    <div class="cm-mapwrap">
+      <iframe id="cm3-osm" class="cm-map" src="" loading="lazy" aria-label="Map"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- //////////////////////////////////// curser change //////////////////////////////////////// -->
+        <div class="cursor-glow" id="cursorGlow"></div>
+        <canvas class="particles" id="particles"></canvas>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- /////////////////// section 3 ///////////////////////////// -->
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- ///////////////////////////// section 4 //////////////////////////////////////// -->
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- //////////////////////////////////// section 5 ///////////////////////////////////////////////// -->
+
+
+  
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- //////////////////////////////// section 6 ///////////////////////////// -->
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+ <!-- /////////////////////////////////////////// section 7 /////////////////////////////////////////////////// -->
+
+
+
+<footer class="footer-compact">
+  <div class="f-container">
+    <!-- Brand & about -->
+    <div class="f-brand">
+      <a class="f-logo" href="#">
+        <span class="f-badge">U</span>
+        <span class="f-name">Umang</span>
+      </a>
+      <p class="f-about">
+        UI/UX designer focused on clean, conversion-first interfaces.
+        I help startups & brands ship fast without losing finesse.
+      </p>
+    </div>
+
+    <!-- Quick links -->
+    <nav class="f-nav" aria-label="Footer">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contact -->
+    <div class="f-contact">
+      <h4>Contact</h4>
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4a2 2 0 0 1 2-2h2l3 6-2 2a16 16 0 0 0 8 8l2-2 6 3v2a2 2 0 0 1-2 2h-2C9.163 23 1 14.837 1 4V4z" fill="currentColor"/></svg>
+          <a href="tel:+918941876178">+91&nbsp;89418&nbsp;76178</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5zm2 .5 8 6 8-6" fill="currentColor"/></svg>
+          <a href="mailto:yadavumang8941@gmail.com">yadavumang8941@gmail.com</a>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9c0 7 9 11 9 11s9-4 9-11a9 9 0 0 0-9-9zm0 5a4 4 0 1 1 0 8 4 4 0 0 1 0-8z" fill="currentColor"/></svg>
+          <span>Lucknow, Uttar Pradesh, India</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social -->
+    <div class="f-social">
+      <h4>Follow</h4>
+      <div class="f-icons">
+        <a href="#" aria-label="Instagram" class="ig">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.4" fill="#fff"/><circle cx="17.5" cy="6.5" r="1.4" fill="#fff"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="li">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM3 8h2.9v13H3zM9 8h2.8v1.8h.1c.4-.8 1.5-2 3.6-2 3 0 3.5 2 3.5 4.6V21H16V13.8c0-1.7-.1-3.8-2.3-3.8-2.3 0-2.6 1.8-2.6 3.7V21H9z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter" class="tw">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.46 6c-.77.34-1.6.57-2.47.68a4.3 4.3 0 0 0 1.88-2.38 8.59 8.59 0 0 1-2.72 1.04 4.28 4.28 0 0 0-7.29 3.9A12.14 12.14 0 0 1 3.15 4.9a4.27 4.27 0 0 0 1.33 5.71c-.62-.02-1.21-.2-1.73-.48v.05a4.28 4.28 0 0 0 3.43 4.2 4.3 4.3 0 0 1-1.12.15c-.27 0-.54-.03-.79-.08a4.28 4.28 0 0 0 3.99 2.96A8.59 8.59 0 0 1 2 19.54a12.11 12.11 0 0 0 6.56 1.92c7.87 0 12.18-6.52 12.18-12.18l-.01-.56A8.6 8.6 0 0 0 22.46 6z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="yt">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 7.5a4 4 0 0 0-2.8-2.8C18.3 4 12 4 12 4s-6.3 0-8.2.7A4 4 0 0 0 1 7.5 41 41 0 0 0 1 12a41 41 0 0 0 .8 4.5 4 4 0 0 0 2.8 2.8C6.7 20 12 20 12 20s6.3 0 8.2-.7a4 4 0 0 0 2.8-2.8A41 41 0 0 0 23 12a41 41 0 0 0 0-4.5Z" fill="currentColor"/><path d="M10 8.7v6.6l5.7-3.3L10 8.7z" fill="#fff"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="f-bottom">
+    <p>© <span id="year"></span> Umang. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  </main>
+
+  <script>
+    // ===== NAV: hamburger open/close =====
+    const navCard = document.querySelector('.nav-card');
+    const burger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', ()=>{
+      const isOpen = navCard.classList.toggle('open');
+      burger.setAttribute('aria-expanded', String(isOpen));
+      mobileMenu.setAttribute('aria-hidden', String(!isOpen));
+    });
+    document.addEventListener('click', (e)=>{
+      if(!navCard.contains(e.target) && navCard.classList.contains('open')){
+        navCard.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+        mobileMenu.setAttribute('aria-hidden','true');
+      }
+    });
+
+
+  </script>
+
+
+
+
+<script>
+(function(){
+  // Centers: [lon, lat]
+  const VIEWS = {
+    hq:     { name: 'New Delhi', center: [77.2090, 28.6139], zoom: 14 },
+    branch: { name: 'Hapur',    center: [77.77588, 28.73058], zoom: 14 },
+    intl:   { name: 'Ghaziabad',     center: [77.44979, 28.66786], zoom: 13 }
+  };
+
+  const iframe   = document.getElementById('cm3-osm');
+  const sel      = document.getElementById('cm3-views');
+  const fullLink = document.getElementById('cm3-osm-link');
+  const layerBtns= Array.from(document.querySelectorAll('.cm-chip[data-layer]'));
+
+  let currentLayer = 'mapnik';
+
+  function buildOSMUrl(lon, lat, z, layer){
+    // Small bbox around center (~3km radius depending on lat)
+    const d = 0.03;
+    const bbox = [
+      (lon-d).toFixed(5),(lat-d).toFixed(5),
+      (lon+d).toFixed(5),(lat+d).toFixed(5)
+    ].join('%2C');
+    return `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=${layer}&marker=${lat.toFixed(5)}%2C${lon.toFixed(5)}`;
+  }
+  function buildFullLink(lon, lat, z){
+    return `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lon}#map=${z}/${lat}/${lon}`;
+  }
+  function applyView(key){
+    const v = VIEWS[key] || VIEWS.hq;
+    const [lon, lat] = v.center;
+    iframe.src = buildOSMUrl(lon, lat, v.zoom, currentLayer);
+    fullLink.href = buildFullLink(lon, lat, v.zoom);
+  }
+
+  if (sel && iframe && fullLink){
+    applyView(sel.value);
+    sel.addEventListener('change', () => applyView(sel.value));
+    layerBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        layerBtns.forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+        currentLayer = btn.dataset.layer; // mapnik | cyclemap | transportmap | hot
+        applyView(sel.value);
+      });
+    });
+  }
+})();
+</script>
+
+<script>
+  const cvs = document.getElementById('particles');
+  const glow = document.getElementById('cursorGlow');
+  const ctx  = cvs.getContext('2d');
+
+  // FULL viewport sizing
+  function resize(){
+    cvs.width  = window.innerWidth;
+    cvs.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // mouse tracking (viewport coords)
+  let mouse = {x: window.innerWidth/2, y: window.innerHeight/2, vx:0, vy:0};
+  window.addEventListener('mousemove', (e)=>{
+    mouse.vx = e.clientX - mouse.x;
+    mouse.vy = e.clientY - mouse.y;
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    glow.style.transform = `translate(${mouse.x}px, ${mouse.y}px)`;
+    const speed = Math.hypot(mouse.vx, mouse.vy);
+    const count = Math.min(12, 3 + Math.floor(speed/12));
+    for(let i=0;i<count;i++) spawn(mouse.x, mouse.y, speed>18);
+  });
+
+  // particles same as pehle (bas viewport-based)
+  const parts = [];
+  function spawn(x,y,burst){
+    const ang = Math.random()*Math.PI*2;
+    const mag = burst ? (2+Math.random()*5) : (0.5+Math.random()*1.6);
+    parts.push({
+      x, y,
+      vx: Math.cos(ang)*mag + mouse.vx*0.02,
+      vy: Math.sin(ang)*mag + mouse.vy*0.02,
+      r: burst ? (2+Math.random()*3) : (1+Math.random()*2.2),
+      life: burst ? 28+Math.random()*18 : 36+Math.random()*28,
+      hue: (260 + Math.random()*160) % 360,
+      alpha: 1
+    });
+  }
+
+  function step(){
+    ctx.clearRect(0,0,cvs.width,cvs.height);
+    for(let i=parts.length-1;i>=0;i--){
+      const p = parts[i];
+      p.x += p.vx; p.y += p.vy;
+      p.vy += 0.02;
+      p.vx *= 0.985; p.vy *= 0.985;
+      p.life -= 1; p.alpha = Math.max(0, p.life/60);
+      const g = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r*6);
+      g.addColorStop(0, `hsla(${p.hue},100%,70%,${0.9*p.alpha})`);
+      g.addColorStop(1, `hsla(${p.hue},100%,50%,0)`);
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(p.x, p.y, p.r*3, 0, Math.PI*2); ctx.fill();
+      if(p.life<=0) parts.splice(i,1);
+    }
+    requestAnimationFrame(step);
+  }
+  step();
+</script>
+
+
+
+</body>
+</html>
